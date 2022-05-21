@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Intro section</title>
   </head>
   <body>
@@ -14,43 +15,47 @@
           <img src="./images/logo.svg" alt="website logo" />
         </div>
         <ul>
-          <!-- category dropdown -->
+          <!-- features dropdown -->
           <li class="left-link" id="features-list">
-            <a href="#">Category</a>
+            <a href="#">Features</a>
             <span id="features-arrow"></span>
-            <div id="categoty-dropdown">
-              <a href="#"
-                ><img src="./images/icon-todo.svg" alt="todo list" /><span
-                  >Todo List</span
-                ></a
-              >
-              <a href="#"
-                ><img src="./images/icon-calendar.svg" alt="calender" /><span
-                  >Calender</span
-                ></a
-              >
-              <a href="#"
-                ><img src="./images/icon-reminders.svg" alt="reminder" /><span
-                  >Reminders</span
-                ></a
-              >
-              <a href="#"
-                ><img src="./images/icon-planning.svg" alt="planning" /><span
-                  >Planning</span
-                ></a
-              >
+            <div id="features-dropdown-container">
+              <div id="features-dropdown">
+                <a href="#"
+                  ><img src="./images/icon-todo.svg" alt="todo list" /><span
+                    >Todo List</span
+                  ></a
+                >
+                <a href="#"
+                  ><img src="./images/icon-calendar.svg" alt="calender" /><span
+                    >Calender</span
+                  ></a
+                >
+                <a href="#"
+                  ><img src="./images/icon-reminders.svg" alt="reminder" /><span
+                    >Reminders</span
+                  ></a
+                >
+                <a href="#"
+                  ><img src="./images/icon-planning.svg" alt="planning" /><span
+                    >Planning</span
+                  ></a
+                >
+              </div>
             </div>
           </li>
-          <!--category dropdown end  -->
+          <!--features dropdown end  -->
 
           <!-- company dropdown -->
           <li class="left-link" id="company-list">
             <a href="#">Company</a>
             <span id="company-arrow"></span>
-            <div id="company-dropdown">
-              <a href="#">History</a>
-              <a href="#">Our Team</a>
-              <a href="#">Blog</a>
+            <div id="company-dropdown-container">
+              <div id="company-dropdown">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
             </div>
           </li>
           <!-- company dropdown end -->
@@ -99,5 +104,6 @@
       </div>
     </header>
     <!-- MAIN END -->
+    <script src="js/script.js"></script>
   </body>
 </html>
