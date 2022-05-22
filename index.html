@@ -9,100 +9,125 @@
   </head>
   <body>
     <!-- NAVBAR START -->
-    <nav>
-      <div id="left-links" class="links">
-        <div id="logo">
-          <img src="./images/logo.svg" alt="website logo" />
-        </div>
-        <ul>
-          <!-- features dropdown -->
-          <li class="left-link" id="features-list">
-            <a href="#">Features</a>
-            <span id="features-arrow"></span>
-            <div id="features-dropdown-container">
-              <div id="features-dropdown">
-                <a href="#"
-                  ><img src="./images/icon-todo.svg" alt="todo list" /><span
-                    >Todo List</span
-                  ></a
-                >
-                <a href="#"
-                  ><img src="./images/icon-calendar.svg" alt="calender" /><span
-                    >Calender</span
-                  ></a
-                >
-                <a href="#"
-                  ><img src="./images/icon-reminders.svg" alt="reminder" /><span
-                    >Reminders</span
-                  ></a
-                >
-                <a href="#"
-                  ><img src="./images/icon-planning.svg" alt="planning" /><span
-                    >Planning</span
-                  ></a
-                >
+    <div id="intro">
+      <nav>
+        <div id="left-links" class="links">
+          <div id="logo">
+            <img src="./images/logo.svg" alt="website logo" />
+          </div>
+          <ul>
+            <!-- features dropdown -->
+            <li class="left-link" id="left-link-features">
+              <a href="#" id="features-list"
+                >Features
+                <span
+                  ><img
+                    id="features-arrow"
+                    src="./images/icon-arrow-down.svg"
+                    alt="arrow down"
+                /></span>
+              </a>
+              <div id="features-dropdown-container">
+                <div id="features-dropdown">
+                  <a href="#"
+                    ><img src="./images/icon-todo.svg" alt="todo list" /><span
+                      >Todo List</span
+                    ></a
+                  >
+                  <a href="#"
+                    ><img
+                      src="./images/icon-calendar.svg"
+                      alt="calender"
+                    /><span>Calender</span></a
+                  >
+                  <a href="#"
+                    ><img
+                      src="./images/icon-reminders.svg"
+                      alt="reminder"
+                    /><span>Reminders</span></a
+                  >
+                  <a href="#"
+                    ><img
+                      src="./images/icon-planning.svg"
+                      alt="planning"
+                    /><span>Planning</span></a
+                  >
+                </div>
               </div>
-            </div>
-          </li>
-          <!--features dropdown end  -->
+            </li>
+            <!--features dropdown end  -->
 
-          <!-- company dropdown -->
-          <li class="left-link" id="company-list">
-            <a href="#">Company</a>
-            <span id="company-arrow"></span>
-            <div id="company-dropdown-container">
-              <div id="company-dropdown">
-                <a href="#">History</a>
-                <a href="#">Our Team</a>
-                <a href="#">Blog</a>
+            <!-- company dropdown -->
+            <li class="left-link" id="left-link-company">
+              <a href="#" id="company-list"
+                >Company
+                <span
+                  ><img
+                    id="company-arrow"
+                    src="./images/icon-arrow-down.svg"
+                    alt="arrow down"
+                /></span>
+              </a>
+              <div id="company-dropdown-container">
+                <div id="company-dropdown">
+                  <a href="#">History</a>
+                  <a href="#">Our Team</a>
+                  <a href="#">Blog</a>
+                </div>
               </div>
-            </div>
-          </li>
-          <!-- company dropdown end -->
+            </li>
+            <!-- company dropdown end -->
 
-          <li class="left-link"><a href="#">Careers</a></li>
-          <li class="left-link"><a href="#">About</a></li>
-        </ul>
-      </div>
-      <div id="right-links" class="links">
-        <ul>
-          <li class="right-link" id="login"><a href="#">Login</a></li>
-          <li class="right-link" id="register"><a href="#">Register</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- NAVBAR FINISH -->
-    <!-- MAIN START =>HEADER SECTION-->
-
-    <header>
-      <div id="header-left">
-        <h1>Make remote work</h1>
-        <p id="main-para">
-          Get your team in sync, no matter your location Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <button id="learn">Learn more</button>
-        <div id="icons">
-          <img
-            src="./images/client-databiz.svg"
-            alt="databiz"
-            class="icons"
-          /><img
-            src="./images/client-audiophile.svg"
-            alt="audiophile"
-            class="icons"
-          /><img src="./images/client-meet.svg" alt="meet" class="icons" /><img
-            src="./images/client-maker.svg"
-            alt="maker"
-            class="icons"
-          />
+            <li class="left-link"><a href="#">Careers</a></li>
+            <li class="left-link"><a href="#">About</a></li>
+          </ul>
         </div>
-      </div>
+        <div id="right-links" class="links">
+          <ul>
+            <li class="right-link" id="login"><a href="#">Login</a></li>
+            <li class="right-link" id="register"><a href="#">Register</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- NAVBAR FINISH -->
+      <!-- MAIN START =>HEADER SECTION-->
 
-      <div id="header-right">
-        <div id="main-pic"></div>
-      </div>
-    </header>
+      <header>
+        <div id="header">
+          <div id="header-left">
+            <h1><span>Make</span> remote work</h1>
+            <p id="main-para">
+              Get your team in sync, no matter your location Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button id="learn">Learn more</button>
+            <div id="icons">
+              <img
+                src="./images/client-databiz.svg"
+                alt="databiz"
+                class="icons"
+              /><img
+                src="./images/client-audiophile.svg"
+                alt="audiophile"
+                class="icons"
+              /><img
+                src="./images/client-meet.svg"
+                alt="meet"
+                class="icons"
+              /><img
+                src="./images/client-maker.svg"
+                alt="maker"
+                class="icons"
+              />
+            </div>
+          </div>
+
+          <div id="header-right">
+            <div id="main-pic"></div>
+          </div>
+        </div>
+      </header>
+    </div>
     <!-- MAIN END -->
     <script src="js/script.js"></script>
   </body>
