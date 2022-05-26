@@ -11,90 +11,125 @@
     <!-- NAVBAR START -->
     <div id="intro">
       <nav>
-        <div id="left-links" class="links">
-          <div id="logo">
-            <img src="./images/logo.svg" alt="website logo" />
-          </div>
-          <ul>
-            <!-- features dropdown -->
-            <li class="left-link" id="left-link-features">
-              <a href="#" id="features-list"
-                >Features
-                <span
-                  ><img
-                    id="features-arrow"
-                    src="./images/icon-arrow-down.svg"
-                    alt="arrow down"
-                /></span>
-              </a>
-              <div id="features-dropdown-container">
-                <div id="features-dropdown">
-                  <a href="#"
-                    ><img src="./images/icon-todo.svg" alt="todo list" /><span
-                      >Todo List</span
-                    ></a
-                  >
-                  <a href="#"
-                    ><img
-                      src="./images/icon-calendar.svg"
-                      alt="calender"
-                    /><span>Calender</span></a
-                  >
-                  <a href="#"
-                    ><img
-                      src="./images/icon-reminders.svg"
-                      alt="reminder"
-                    /><span>Reminders</span></a
-                  >
-                  <a href="#"
-                    ><img
-                      src="./images/icon-planning.svg"
-                      alt="planning"
-                    /><span>Planning</span></a
-                  >
-                </div>
-              </div>
-            </li>
-            <!--features dropdown end  -->
-
-            <!-- company dropdown -->
-            <li class="left-link" id="left-link-company">
-              <a href="#" id="company-list"
-                >Company
-                <span
-                  ><img
-                    id="company-arrow"
-                    src="./images/icon-arrow-down.svg"
-                    alt="arrow down"
-                /></span>
-              </a>
-              <div id="company-dropdown-container">
-                <div id="company-dropdown">
-                  <a href="#">History</a>
-                  <a href="#">Our Team</a>
-                  <a href="#">Blog</a>
-                </div>
-              </div>
-            </li>
-            <!-- company dropdown end -->
-
-            <li class="left-link"><a href="#">Careers</a></li>
-            <li class="left-link"><a href="#">About</a></li>
-          </ul>
+        <!-- logo -->
+        <div id="logo">
+          <img src="./images/logo.svg" alt="website logo" />
         </div>
-        <div id="right-links" class="links">
-          <ul>
-            <li class="right-link" id="login"><a href="#">Login</a></li>
-            <li class="right-link" id="register"><a href="#">Register</a></li>
-          </ul>
+        <!-- hamburger menu icon -->
+        <div id="hamburger-menu">
+          <img src="./images/icon-menu.svg" alt="hamburger menu" />
+        </div>
+        <div id="shallow-screen">
+          <div id="links-outer">
+            <div id="links-inner">
+              <div id="close-btn">
+                <img src="./images/icon-close-menu.svg" alt="close" />
+              </div>
+              <div id="left-links" class="links">
+                <ul>
+                  <!-- features dropdown -->
+                  <li class="left-link" id="left-link-features">
+                    <a href="#" id="features-list"
+                      >Features
+                      <span
+                        ><img
+                          id="features-arrow"
+                          src="./images/icon-arrow-down.svg"
+                          alt="arrow down"
+                      /></span>
+                    </a>
+                    <div id="features-dropdown-container">
+                      <div id="features-dropdown">
+                        <a href="#"
+                          ><img
+                            src="./images/icon-todo.svg"
+                            alt="todo list"
+                          /><span>Todo List</span></a
+                        >
+                        <a href="#"
+                          ><img
+                            src="./images/icon-calendar.svg"
+                            alt="calender"
+                          /><span>Calender</span></a
+                        >
+                        <a href="#"
+                          ><img
+                            src="./images/icon-reminders.svg"
+                            alt="reminder"
+                          /><span>Reminders</span></a
+                        >
+                        <a href="#"
+                          ><img
+                            src="./images/icon-planning.svg"
+                            alt="planning"
+                          /><span>Planning</span></a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <!--features dropdown end  -->
+                  <!-- company dropdown -->
+                  <li class="left-link" id="left-link-company">
+                    <a href="#" id="company-list"
+                      >Company
+                      <span
+                        ><img
+                          id="company-arrow"
+                          src="./images/icon-arrow-down.svg"
+                          alt="arrow down"
+                      /></span>
+                    </a>
+                    <div id="company-dropdown-container">
+                      <div id="company-dropdown">
+                        <a href="#">History</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Blog</a>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- company dropdown end -->
+                  <li class="left-link"><a href="#">Careers</a></li>
+                  <li class="left-link"><a href="#">About</a></li>
+                </ul>
+              </div>
+              <!-- left links -->
+
+              <div id="right-links" class="links">
+                <ul>
+                  <li class="right-link" id="login"><a href="#">Login</a></li>
+                  <li class="right-link" id="register">
+                    <a href="#">Register</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
+
       <!-- NAVBAR FINISH -->
+
       <!-- MAIN START =>HEADER SECTION-->
 
       <header>
         <div id="header">
-          <div id="header-left">
+          <div id="image">
+            <img
+              src="./images/image-hero-mobile.png"
+              alt="hero mobile image"
+              id="mobile-image"
+              width="100px"
+              height="100px"
+            />
+            <img
+              src="./images/image-hero-desktop.png"
+              alt="hero mobile image"
+              id="desktop-image"
+              width="100px"
+              height="100px"
+            />
+          </div>
+          <div id="content">
             <h1><span>Make</span> remote work</h1>
             <p id="main-para">
               Get your team in sync, no matter your location Streamline
@@ -120,10 +155,6 @@
                 class="icons"
               />
             </div>
-          </div>
-
-          <div id="header-right">
-            <div id="main-pic"></div>
           </div>
         </div>
       </header>
