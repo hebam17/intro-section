@@ -33,6 +33,7 @@ body {
   background: var(--almost-white);
   display: flex;
   flex-direction: column;
+  /* border: solid 1px; */
 }
 
 /* NAVBAR START */
@@ -165,7 +166,7 @@ body {
 /* NAVBAR END */
 
 /* HEADER START */
-#header {
+header {
   flex: auto;
   text-align: center;
   padding-bottom: 4rem;
@@ -238,3 +239,201 @@ header h1 {
   padding-left: 0.5rem;
 }
 /* HEADER END */
+
+/* MEDIA QUERY  */
+@media screen and (min-width: 769px) {
+  #hamburger-menu {
+    display: none;
+  }
+
+  #close-btn {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    /* border: solid 1px; */
+    padding: 0 1.2rem !important;
+  }
+  #logo {
+    margin-top: 0.2rem;
+  }
+  #shallow-screen {
+    display: block !important;
+    position: initial;
+    background: inherit !important;
+    /* width: fit-content; */
+    flex: auto;
+    overflow: auto;
+    /* border: solid 1px; */
+    padding: 0 !important;
+    /* height: 100%; */
+    /* height: fit-content !important; */
+  }
+
+  #links-outer {
+    position: initial;
+    width: 100% !important;
+    /* border: solid 1px; */
+    padding: 0 !important;
+
+    /* height: auto; */
+  }
+
+  #links-inner {
+    display: flex;
+    width: 100%;
+    /* display: block; */
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 1rem; */
+    /* background: #000; */
+    height: auto;
+    /* border: solid 1px red; */
+    padding: 1rem 0 !important;
+  }
+
+  #left-links ul {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center;
+    /* border: solid 1px; */
+    padding-left: 2rem !important;
+  }
+
+  #left-links ul li {
+    margin-left: 2rem;
+  }
+
+  #right-links ul {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center;
+    /* border: solid 1px; */
+  }
+
+  #right-links ul li {
+    margin-left: 2rem;
+  }
+
+  #intro nav ul li {
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  #register a {
+    padding: 0.7rem 1rem !important;
+  }
+
+  #left-link-features,
+  #left-link-company {
+    /* position: relative; */
+  }
+
+  #features-dropdown-container,
+  #company-dropdown-container {
+    padding: 0.5rem 1.5rem 1rem;
+    /* border-top: solid 1rem var(--almost-white); */
+    border-radius: 10px;
+    position: absolute;
+    background: white;
+    top: 2rem;
+    right: 0;
+    z-index: 999;
+    width: fit-content;
+    -webkit-box-shadow: 1px 2px 32px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 32px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+  }
+
+  #features-dropdown-container {
+    left: 4.5rem;
+    top: 2.7rem;
+  }
+
+  #company-dropdown-container {
+    left: 16.5rem;
+    top: 2.7rem;
+  }
+
+  /* NAVBAR END */
+
+  /* HEADER START */
+
+  header {
+    padding-bottom: 0;
+  }
+  #header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    /* border: solid 1px red; */
+    padding: 4rem 5rem 8rem 7rem;
+  }
+
+  header h1 {
+    font-size: 5rem;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    /* padding: 10rem 6rem; */
+  }
+  #desktop-image {
+    display: initial;
+  }
+
+  #mobile-image {
+    display: none;
+  }
+
+  #image {
+    border: solid 1px;
+    flex: 5;
+  }
+
+  #image img {
+    object-position: center;
+  }
+
+  #content {
+    flex: 5;
+    border: solid 1px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    text-align: left;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  #content span {
+    display: block;
+  }
+
+  #main-para {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  #learn {
+    padding: 1.2rem 2rem !important;
+    margin-top: 3rem;
+  }
+
+  #icons {
+    /* margin-bottom: 0; */
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+  }
+}
