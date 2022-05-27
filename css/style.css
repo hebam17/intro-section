@@ -33,7 +33,6 @@ body {
   background: var(--almost-white);
   display: flex;
   flex-direction: column;
-  /* border: solid 1px; */
 }
 
 /* NAVBAR START */
@@ -207,7 +206,6 @@ header h1 {
   font-family: var(--font-family);
   font-weight: var(--font-weights2);
   border-radius: 1rem;
-  border: none;
   margin-top: 0.8rem;
   margin-bottom: 3rem;
   border: solid 2px var(--almost-black);
@@ -254,7 +252,6 @@ header h1 {
     display: flex;
     justify-content: space-between !important;
     align-items: center !important;
-    /* border: solid 1px; */
     padding: 0 1.2rem !important;
   }
   #logo {
@@ -264,35 +261,24 @@ header h1 {
     display: block !important;
     position: initial;
     background: inherit !important;
-    /* width: fit-content; */
     flex: auto;
     overflow: auto;
-    /* border: solid 1px; */
     padding: 0 !important;
-    /* height: 100%; */
-    /* height: fit-content !important; */
   }
 
   #links-outer {
     position: initial;
     width: 100% !important;
-    /* border: solid 1px; */
     padding: 0 !important;
-
-    /* height: auto; */
   }
 
   #links-inner {
     display: flex;
     width: 100%;
-    /* display: block; */
     flex-direction: row !important;
     justify-content: space-between;
     align-items: center;
-    /* margin: 1rem; */
-    /* background: #000; */
     height: auto;
-    /* border: solid 1px red; */
     padding: 1rem 0 !important;
   }
 
@@ -301,7 +287,6 @@ header h1 {
     flex-direction: row !important;
     justify-content: space-between !important;
     align-items: center;
-    /* border: solid 1px; */
     padding-left: 2rem !important;
   }
 
@@ -314,7 +299,6 @@ header h1 {
     flex-direction: row !important;
     justify-content: space-between !important;
     align-items: center;
-    /* border: solid 1px; */
   }
 
   #right-links ul li {
@@ -338,7 +322,6 @@ header h1 {
   #features-dropdown-container,
   #company-dropdown-container {
     padding: 0.5rem 1.5rem 1rem;
-    /* border-top: solid 1rem var(--almost-white); */
     border-radius: 10px;
     position: absolute;
     background: white;
@@ -375,15 +358,13 @@ header h1 {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    /* border: solid 1px red; */
-    padding: 4rem 5rem 8rem 7rem;
+    padding: 5rem 6rem 8rem 7rem;
   }
 
   header h1 {
     font-size: 5rem;
-    margin-top: 7rem;
-    margin-bottom: 4rem;
-    /* padding: 10rem 6rem; */
+    margin-top: 8rem;
+    font-weight: var(--font-weights2);
   }
   #desktop-image {
     display: initial;
@@ -394,7 +375,6 @@ header h1 {
   }
 
   #image {
-    border: solid 1px;
     flex: 5;
   }
 
@@ -404,13 +384,12 @@ header h1 {
 
   #content {
     flex: 5;
-    border: solid 1px;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between; */
+    justify-content: space-between;
+    align-items: flex-start;
     text-align: left;
-    padding-bottom: 0;
-    position: relative;
+    margin-right: 5rem;
   }
 
   #content span {
@@ -420,16 +399,15 @@ header h1 {
   #main-para {
     font-size: 1.2rem;
     line-height: 2rem;
+    width: 80%;
   }
 
   #learn {
     padding: 1.2rem 2rem !important;
-    margin-top: 3rem;
+    margin-bottom: 5rem !important;
   }
 
   #icons {
-    /* margin-bottom: 0; */
-    position: absolute;
     bottom: 1rem;
     display: flex;
     justify-content: space-between;
