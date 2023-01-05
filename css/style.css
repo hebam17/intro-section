@@ -14,7 +14,6 @@
 
 * {
   box-sizing: border-box;
-  /* overflow: hidden !important; */
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -46,18 +45,19 @@ body {
   right: 0;
   top: 0;
   height: 100%;
-  width: 0;
+  width: 70vw;
   overflow: auto;
   position: absolute;
   background: var(--almost-white);
   z-index: 999;
+  transition: all 0.5s;
 }
 
 #hamburger-menu {
   cursor: pointer;
 }
 
-/* dropdown menus */
+/* dropdown menus  */
 #features-dropdown-container,
 #company-dropdown-container {
   margin-left: 2rem;
@@ -103,9 +103,10 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 1.3rem;
-  /* align-items: flex-start; */
 }
-#intro nav ul {
+
+#left-links ul,
+#right-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -117,6 +118,10 @@ body {
 #close-btn {
   text-align: right;
   padding-bottom: 1rem;
+}
+
+#close-btn:hover {
+  cursor: pointer;
 }
 
 #intro nav ul li {
@@ -132,18 +137,18 @@ body {
   font-size: var(--paragraph-font-size);
 }
 
-#features-dropdown-container:hover,
-#company-dropdown-container:hover {
-  display: block;
-}
 #features-dropdown-container,
 #company-dropdown-container {
   display: none;
 }
 
+#left-link-features #left-link-company {
+  position: relative;
+}
+
 #register a {
   border: solid 2px var(--medium-gray);
-  padding: 0.7rem 4rem !important;
+  padding: 0.7rem 4rem;
   border-radius: 1rem;
 }
 
@@ -169,7 +174,6 @@ header {
   flex: auto;
   text-align: center;
   padding-bottom: 4rem;
-  /* display: none; */
 }
 
 #desktop-image {
@@ -227,7 +231,6 @@ header h1 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  /* padding: 1rem 0.5rem; */
 }
 
 #icons img {
@@ -239,7 +242,7 @@ header h1 {
 /* HEADER END */
 
 /* MEDIA QUERY  */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 850px) {
   #hamburger-menu {
     display: none;
   }
@@ -248,61 +251,64 @@ header h1 {
     display: none;
   }
 
-  nav {
+  #intro nav {
     display: flex;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 0 1.2rem !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
   }
   #logo {
     margin-top: 0.2rem;
   }
+
   #shallow-screen {
     display: block !important;
     position: initial;
-    background: inherit !important;
+    background: inherit;
     flex: auto;
-    overflow: auto;
-    padding: 0 !important;
+    overflow: hidden;
+    padding: 0;
   }
 
   #links-outer {
     position: initial;
-    width: 100% !important;
-    padding: 0 !important;
+    width: 100%;
+    display: block;
+    padding: 0;
   }
 
-  #links-inner {
+  #intro #links-inner {
     display: flex;
     width: 100%;
-    flex-direction: row !important;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: auto;
-    padding: 1rem 0 !important;
+    padding: 1rem 0;
+    overflow: hidden;
   }
 
   #left-links ul {
     display: flex;
-    flex-direction: row !important;
-    justify-content: space-between !important;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 2rem !important;
+    padding-left: 2rem;
   }
 
   #left-links ul li {
-    margin-left: 2rem;
+    margin-left: 1.8rem;
   }
 
   #right-links ul {
     display: flex;
-    flex-direction: row !important;
-    justify-content: space-between !important;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 
   #right-links ul li {
-    margin-left: 2rem;
+    margin-left: 1.8rem;
   }
 
   #intro nav ul li {
@@ -311,12 +317,7 @@ header h1 {
   }
 
   #register a {
-    padding: 0.7rem 1rem !important;
-  }
-
-  #left-link-features,
-  #left-link-company {
-    /* position: relative; */
+    padding: 0.7rem 1rem;
   }
 
   #features-dropdown-container,
@@ -325,8 +326,6 @@ header h1 {
     border-radius: 10px;
     position: absolute;
     background: white;
-    top: 2rem;
-    right: 0;
     z-index: 999;
     width: fit-content;
     -webkit-box-shadow: 1px 2px 32px 6px rgba(0, 0, 0, 0.1);
@@ -337,12 +336,12 @@ header h1 {
 
   #features-dropdown-container {
     left: 4.5rem;
-    top: 2.7rem;
+    top: 5rem;
   }
 
   #company-dropdown-container {
     left: 16.5rem;
-    top: 2.7rem;
+    top: 5rem;
   }
 
   /* NAVBAR END */
@@ -390,7 +389,6 @@ header h1 {
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;
-    /* margin-right: 4rem; */
   }
 
   #content span {
@@ -404,8 +402,8 @@ header h1 {
   }
 
   #learn {
-    padding: 1.2rem 2rem !important;
-    margin-bottom: 6rem !important;
+    padding: 1.2rem 2rem;
+    margin-bottom: 6rem;
   }
 
   #icons {

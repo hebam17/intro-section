@@ -17,49 +17,37 @@ const sideNavContainer = document.getElementById("shallow-screen");
 
 // For hover function
 
-let isIn = false;
-const toggleDropdownHover = (arrow, dropdown, e) => {
-  switch (e.type) {
-    case "mouseenter":
-      isIn = true;
-      dropdown.style.display = "block";
-      arrow.src = "../images/icon-arrow-up.svg";
-      break;
-    case "mouseleave":
-      isIn = false;
-      dropdown.style.display = "none";
-      arrow.src = "../images/icon-arrow-down.svg";
-      break;
-    default:
-      isIn = false;
+const toggleDropdownHover = (arrow, dropdown) => {
+  let isIn = dropdown.style.display;
+  if (isIn === "block") {
+    isIn = false;
+    dropdown.style.display = "none";
+    arrow.src = "./images/icon-arrow-down.svg";
+    console.log("isIn:", isIn);
+  } else {
+    isIn = true;
+    dropdown.style.display = "block";
+    arrow.src = "./images/icon-arrow-up.svg";
+    console.log("isIn:", isIn);
   }
 };
 
 // sidemenu function
 // open sidebar
 const sideMenuOpen = () => {
-  sideNav.style.width = "70vw";
   sideNavContainer.style.display = "block";
 };
 // close sidebar
 const sideMenuClose = () => {
-  // console.log(e.target);
-  sideNav.style.width = "0vw";
   sideNavContainer.style.display = "none";
 };
 
 // menu on hover(mouseenter,mouseleave)
-companyList.addEventListener("mouseenter", (e) =>
-  toggleDropdownHover(companyArrow, companyListItems, e)
-);
-companyList.addEventListener("mouseleave", (e) =>
+companyList.addEventListener("click", (e) =>
   toggleDropdownHover(companyArrow, companyListItems, e)
 );
 
-featuresList.addEventListener("mouseenter", (e) =>
-  toggleDropdownHover(featuresArrow, featuresListItems, e)
-);
-featuresList.addEventListener("mouseleave", (e) =>
+featuresList.addEventListener("click", (e) =>
   toggleDropdownHover(featuresArrow, featuresListItems, e)
 );
 
