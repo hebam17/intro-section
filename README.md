@@ -6,6 +6,6 @@
 - no frameworks or libraries were used
 - This css styling is mobile first design
 
-![the time tracking dashboard](./design/desktop-design.jpg)
+![This is how it looks like](./design/desktop-design.jpg)
 
 ### The app https://hebam17.github.io/intro-section/
